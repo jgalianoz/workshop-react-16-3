@@ -1,0 +1,10 @@
+@import "./theme/reset.css";
+@import 'normalize.css/normalize.css';
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply .font-sans;
+}
