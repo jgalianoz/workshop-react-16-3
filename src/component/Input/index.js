@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import cn from "classnames";
 
+import FadeTranslation from 'component/FadeTranslation';
+
 const FORM_INPUTS = ["INPUT", "TEXTAREA"];
 
 class InputField extends Component {
@@ -27,7 +29,7 @@ class InputField extends Component {
           className="mb-2 block tracking-wide uppercase text-grey-darker text-xs font-bold"
           htmlFor={id}
         >
-          {label}
+          <FadeTranslation>{label}</FadeTranslation>
         </label>
         <input
           className={cn(

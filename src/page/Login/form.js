@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import FadeTranslation from 'component/FadeTranslation';
 import InputField from "component/Input";
 import Button from "component/Button";
 
@@ -106,7 +107,9 @@ class LoginForm extends Component {
           />
           <div className="w-full">
             <div className="mt-4 flex justify-center">
-              <Button>{locals.button}</Button>
+              <Button>
+                <FadeTranslation>{locals.button}</FadeTranslation>
+              </Button>
             </div>
           </div>
         </div>
@@ -115,7 +118,7 @@ class LoginForm extends Component {
             href="#"
             className="py-4 inline-block text-grey-dark hover:text-indigo"
           >
-            {locals.forgot_password}
+            <FadeTranslation>{locals.forgot_password}</FadeTranslation>
           </a>
         </div>
       </form>
