@@ -6,11 +6,13 @@ export const languages = {
     login: {
       username_field: {
         label: "Username",
-        placeholder: "admin"
+        placeholder: "admin",
+        required: "Please enter a username"
       },
       password_field: {
         label: "Passoword",
-        placeholder: "•••••"
+        placeholder: "•••••",
+        required: "Please enter a password"
       },
       button: "Login",
       forgot_password: "Forgot Your Password?"
@@ -21,11 +23,13 @@ export const languages = {
     login: {
       username_field: {
         label: "Nombre de Usuario",
-        placeholder: "admin"
+        placeholder: "admin",
+        required: "Por favor ingrese un nombre de usuario"
       },
       password_field: {
         label: "Contraseña",
-        placeholder: "•••••"
+        placeholder: "•••••",
+        required: "Por favor ingrese una contraseña"
       },
       button: "Iniciar Sesión",
       forgot_password: "Olvidaste tu Contraseña?"
