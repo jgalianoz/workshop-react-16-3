@@ -8,3 +8,7 @@
 body {
   @apply .font-sans;
 }
+
+a {
+  transition: color 100ms ease-in-out;
+}
