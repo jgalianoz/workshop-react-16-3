@@ -36,12 +36,12 @@ class LoginForm extends Component {
   };
   handleSubmit = ev => {
     ev.preventDefault();
-
     const { locals } = this.props;
-    const formData = new FormData(ev.target);
+    const { username, password } = this.state;
+
     let isValid = true;
 
-    if (formData.get("username").trim() === "") {
+    if (username.value.trim() === "") {
       isValid = false;
       this.setState({
         username: {
@@ -51,9 +51,8 @@ class LoginForm extends Component {
       });
     }
 
-    if (formData.get("password").trim() === "") {
+    if (password.value.trim() === "") {
       isValid = false;
-
       this.setState({
         password: {
           value: "",
